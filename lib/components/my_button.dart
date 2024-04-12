@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 class MyButton extends StatelessWidget {
   final Function()? onTap;
   final String text;
+  final IconData? icon;
   const MyButton({
     required this.onTap,
     required this.text,
+    this.icon,
     super.key,
   });
 
@@ -21,15 +23,26 @@ class MyButton extends StatelessWidget {
             Radius.circular(7),
           ),
         ),
-        child: Center(
-          child: Text(
-            text,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 16,
-              fontWeight: FontWeight.bold,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              text,
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+              ),
             ),
-          ),
+            if (icon != null)
+              const SizedBox(
+                width: 8,
+              ),
+            Icon(
+              icon,
+              color: Colors.white,
+            )
+          ],
         ),
       ),
     );

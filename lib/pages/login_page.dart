@@ -36,8 +36,11 @@ class _LoginPageState extends State<LoginPage> {
         email: email.text,
         password: password.text,
       );
-      // pop the loading circle
-      Navigator.pop(context);
+      // Check if the widget is still mounted before popping the loading dialog
+      if (mounted) {
+        // pop the loading circle
+        Navigator.pop(context);
+      }
     } on FirebaseAuthException catch (e) {
       // pop the loading circle
       Navigator.pop(context);
@@ -96,9 +99,10 @@ class _LoginPageState extends State<LoginPage> {
                 children: [
                   // logo
                   Image.asset(
-                    'assets/images/ic_uber.png',
+                    'assets/icons/ic_uber.png',
                     width: 196,
                   ),
+                  const SizedBox(height: 32),
 
                   // Welcomeback, you've been missed!
                   Text(

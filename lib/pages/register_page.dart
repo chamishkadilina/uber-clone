@@ -115,9 +115,10 @@ class _RegisterPageState extends State<RegisterPage> {
                 children: [
                   // logo
                   Image.asset(
-                    'assets/images/ic_uber.png',
+                    'assets/icons/ic_uber.png',
                     width: 196,
                   ),
+                  const SizedBox(height: 32),
 
                   // Let's create an account for you!
                   Text(
