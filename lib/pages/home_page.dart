@@ -17,6 +17,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final email = user?.email ?? 'No User';
     return Scaffold(
+      backgroundColor: const Color(0xFF293241),
       appBar: AppBar(
         actions: [
           IconButton(
@@ -32,9 +33,7 @@ class HomePage extends StatelessWidget {
         child: Center(
           child: Text(
             'Loggin Successful\n$email',
-            style: const TextStyle(
-              fontSize: 20,
-            ),
+            style: const TextStyle(fontSize: 24, color: Colors.white),
           ),
         ),
       ),
