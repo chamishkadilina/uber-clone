@@ -27,7 +27,10 @@ class HomePage extends StatelessWidget {
             ),
           ),
         ],
-        backgroundColor: Colors.grey.shade700,
+
+        backgroundColor: Colors.grey.shade300,
+    
+
       ),
       body: SafeArea(
         child: Center(
