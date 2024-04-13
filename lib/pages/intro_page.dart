@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:uberclone/components/my_button.dart';
-import 'package:uberclone/pages/home_page.dart';
+import 'package:uberclone/pages/home/home_page.dart';
 
 class IntroPage extends StatelessWidget {
   const IntroPage({super.key});
