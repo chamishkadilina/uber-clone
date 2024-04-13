@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final email = user?.email ?? 'No User';
     return Scaffold(
-      //  backgroundColor: const Color(0xFF293241),
+      backgroundColor: const Color(0xFF293241),
       appBar: AppBar(
         actions: [
           IconButton(
@@ -27,7 +27,7 @@ class HomePage extends StatelessWidget {
             ),
           ),
         ],
-        //   backgroundColor: Colors.grey.shade300,
+        backgroundColor: Colors.grey.shade300,
       ),
       body: SafeArea(
         child: Center(
