@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:uberclone/pages/auth_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:uberclone/pages/home/home_page.dart';
+import 'package:uberclone/pages/home/pickup_page.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
       routes: {
         AuthPage.id: (context) => const AuthPage(),
         HomePage.id: (context) => HomePage(),
+        PickupPage.id: (context) => const PickupPage(),
       },
     );
   }
