@@ -21,6 +21,7 @@ class HomePage extends StatelessWidget {
       length: 2,
       child: SafeArea(
         child: Scaffold(
+          resizeToAvoidBottomInset: false,
           body: Column(
             children: [
               const SizedBox(height: 20),
@@ -70,7 +71,9 @@ class HomePage extends StatelessWidget {
                 child: TabBarView(
                   children: [
                     // Rides tab
-                    RidesTab(),
+                    SingleChildScrollView(
+                      child: RidesTab(),
+                    ),
                     // Eats tab
                     EatsTab(),
                   ],

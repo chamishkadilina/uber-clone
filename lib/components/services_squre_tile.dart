@@ -22,20 +22,23 @@ class ServicesSqureTile extends StatelessWidget {
           color: Colors.grey.shade200,
           borderRadius: BorderRadius.circular(12),
         ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset(
-              image,
-              width: 56,
-            ),
-            Text(
-              text,
-              style: const TextStyle(
-                fontWeight: FontWeight.bold,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                image,
+                width: 52,
               ),
-            ),
-          ],
+              Text(
+                text,
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
