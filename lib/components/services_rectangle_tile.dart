@@ -39,7 +39,7 @@ class ServicesRectangleTile extends StatelessWidget {
                 alignment: Alignment.centerRight,
                 child: Image.asset(
                   image,
-                  width: 56,
+                  width: 52,
                 ),
               ),
             ],
