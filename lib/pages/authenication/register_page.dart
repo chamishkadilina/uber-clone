@@ -71,7 +71,7 @@ class _RegisterPageState extends State<RegisterPage> {
       String errorMessage;
       switch (e.code) {
         case 'weak-password':
-          errorMessage = 'The password provided is too weak.';
+          errorMessage = 'dfhdfhdf.'; //The password provided is too weak
           break;
         case 'email-already-in-use':
           errorMessage = 'The account already exists for that email.';
