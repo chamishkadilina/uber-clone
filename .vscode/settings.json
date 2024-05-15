@@ -1,4 +1,5 @@
 {
     "dart.previewFlutterUiGuides": false,
-    "dart.previewFlutterUiGuidesCustomTracking": false
+    "dart.previewFlutterUiGuidesCustomTracking": false,
+    "cmake.configureOnOpen": false
 }

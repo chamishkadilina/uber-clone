@@ -55,18 +55,18 @@ class RidesTab extends StatelessWidget {
           ),
           const SizedBox(height: 10),
 
-          // // from location
-          // LocationCard(
-          //   onTap: () {
-          //     // go to map page
-          //     Navigator.pushNamed(context, MapPage.id);
-          //   },
-          //   location: 'Ragama',
-          // ),
-          // const SizedBox(height: 6),
+          // from location
+          LocationCard(
+            onTap: () {
+              // go to map page
+              Navigator.pushNamed(context, MapPage.id);
+            },
+            location: 'Ragama',
+          ),
+          const SizedBox(height: 6),
 
-          // const SizedBox(child: Divider(thickness: 0.5)),
-          // const SizedBox(height: 6),
+          const SizedBox(child: Divider(thickness: 0.5)),
+          const SizedBox(height: 6),
 
           // to location
           LocationCard(
